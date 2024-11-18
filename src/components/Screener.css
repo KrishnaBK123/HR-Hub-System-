@@ -1,0 +1,131 @@
+/* Search Bar Styles */
+.search-bar-container {
+    display: flex;
+    width: 50%;
+    justify-content: space-between; /* Space between dropdowns and button */
+    margin-bottom: 20px; /* Space below the search bar */
+    margin-top: 100px;
+    margin-left: 400px;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    flex: 1; /* Allow dropdowns to take equal space */
+    margin-right: 10px; /* Space between dropdowns */
+    
+  }
+  
+  .dropdown select {
+    width: 100%; /* Full width for dropdown */
+    padding: 10px; /* Padding inside the dropdown */
+    border: 1px solid #ccc; /* Border for dropdown */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #fff; /* White background for dropdown */
+    font-size: 16px; /* Font size for dropdown text */
+  }
+  
+.element {
+    margin-left: 400px;
+    margin-top: 200px;
+    background-color: #f0f0f0;
+
+  
+  }
+.questions {
+    display: flex;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center;     /* Vertically center the content */
+    text-align: left;        /* Align text to the left */
+    padding: 20px;
+    background-color: #ffff; /* Light background for the container */
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 0 auto;          /* Center the container on the page */
+}
+
+.questions ul {
+    list-style-type: none;    /* Remove bullet points from the list */
+    padding: 0;
+}
+
+.questions li {
+    margin-bottom: 20px;
+}
+
+.questions strong {
+    color: #2c3e50;           /* Darker color for question headings */
+    font-size: 18px;          /* Font size for questions */
+}
+
+.questions p {
+    color: #34495e;           /* Slightly lighter color for the answers */
+    font-size: 16px;          /* Font size for answers */
+    margin-top: 5px;
+}
+
+/* Container for buttons */
+.buttons-section {
+  display: flex;
+  margin-left: 350px;
+  justify-content: space-evenly; /* Space out the buttons */
+  align-items: center;
+  gap: 20px; /* Adds space between buttons */
+  margin-top: 20px; /* Adds top margin for spacing */
+}
+
+/* Style for the back button */
+.back-btn {
+  padding: 10px 20px;
+  background-color: #0747A6; /* Red background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.back-btn:hover {
+  background-color: #2e61ad; /* Darker red on hover */
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+.back-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Style for the export button */
+.select-btn {
+  padding: 10px 20px;
+  background-color: #0747A6; /* Green background */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.select-btn:hover {
+  background-color: #2662bb; /* Darker green on hover */
+  transform: translateY(-2px); /* Slight hover effect */
+}
+
+.select-btn:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .buttons-section {
+    flex-direction: column; /* Stack buttons vertically */
+    align-items: center; /* Center buttons */
+    gap: 10px; /* Reduce the gap between buttons */
+  }
+
+  .back-btn, .select-btn {
+    width: 100%; /* Make buttons full width on smaller screens */
+    font-size: 18px; /* Increase font size for readability */
+  }
+}
+

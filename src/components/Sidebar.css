@@ -1,0 +1,82 @@
+/* Sidebar styles */
+.sidebar {
+  width: 70px; /* Width of the sidebar */
+  height: 100vh; /* Full height */
+  background-color: #0747A6; /* Sidebar background color */
+  padding: 20px; /* Padding inside sidebar */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center align items */
+  position: fixed; /* Fixed position */
+  top: 70px; /* Distance from top */
+  left: 0; /* Align to the left */
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1); /* Box shadow effect */
+}
+
+.menu-item {
+  display: flex; /* Flexbox for menu items */
+  flex-direction: column; /* Stack icon and text vertically */
+  align-items: center; /* Center align items */
+  justify-content: center; /* Center content */
+  margin: 10px 0; /* Vertical margin */
+  text-align: center; /* Center text */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  padding: 10px; /* Padding around the menu item */
+  border-radius: 8px; /* Rounded corners */
+  position: relative; /* Relative positioning for dropdown */
+}
+
+.menu-item:hover {
+  background-color: #4a80d6; /* Background on hover */
+  transform: scale(1.05); /* Slightly scale on hover */
+}
+
+.menu-item img,
+.menu-item svg {
+  width: 25px; /* Size of icons */
+  height: 25px; /* Size of icons */
+  margin-bottom: 5px; /* Gap between icon and text */
+  fill: white; /* Fill color */
+  stroke: white; /* Stroke color */
+  transition: fill 0.3s ease; /* Smooth color transition */
+}
+
+.menu-item:hover img,
+.menu-item:hover svg {
+  fill: #fcfcfb; /* Change icon color on hover */
+  stroke: #fdfdfd; /* Change stroke color on hover */
+}
+
+.menu-item span {
+  font-size: 1rem; /* Font size */
+  font-weight: bold; /* Bold text */
+  color: #eeecec; /* Text color */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.menu-item:hover span {
+  color: white; /* Change text color on hover */
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: absolute; /* Position below the button */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack dropdown items */
+  background-color: #4a80d6; /* Dropdown background color */
+  margin-top: 10px; /* Space above dropdown */
+  border-radius: 5px; /* Rounded corners */
+  width: 100px; /* Width of dropdown */
+  z-index: 1000; /* Ensure dropdown is on top */
+}
+
+.dropdown a {
+  color: white; /* Text color for links */
+  padding: 5px; /* Padding for dropdown items */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+}
+
+.dropdown a:hover {
+  background-color: #5c91e8; /* Background color on hover */
+}

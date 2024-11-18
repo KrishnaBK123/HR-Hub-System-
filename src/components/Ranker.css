@@ -1,0 +1,138 @@
+.resume-ranker-container {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 100px;
+    margin-left: 280px;
+
+} 
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: #010000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #070707;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+    padding: 35px;
+    background-color:#f1f1f1; /* Light background for the search bar */
+   
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px; /* Adjust width as needed */
+    appearance: none; /* Remove default arrow */
+    background-size: 10px;
+    background-color: white;
+}
+
+.dropdown select:focus {
+    outline: none;
+    border-color: #0747A6; /* Change border color on focus */
+}
+
+.top-resume {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between label and input */
+}
+
+.top-resume label {
+    font-size: 16px;
+}
+
+.top-resume input {
+    width: 50px; /* Width of the input */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center; /* Center the number */
+}
+
+  
+
+.search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #0747A6; /* Button color */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth background change */
+}
+
+.search-button:hover {
+    background-color:#1a58b5; /* Darker shade on hover */
+}
+
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+}
+
+.result-card {
+    background-color: #b0d5a4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.result-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.result-card p {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+
+.experience {
+    font-weight: bold;
+    color: #0d0d0d;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
